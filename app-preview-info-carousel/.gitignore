@@ -1,0 +1,13 @@
+#NPM
+npm
+npm-debug.log
+node_modules/
+
+## MAC files ##
+.DS_Store
+
+#Compilations
+bundle.js
+
+#screenshots
+screenshots

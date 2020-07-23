@@ -1,0 +1,60 @@
+{
+  "name": "app-info-logistics-component",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Anthony Ha",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build": "webpack -d --watch",
+    "build-prod": "webpack -p --mode production",
+    "db:setup": "node postgres_database/seed.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cassandra-driver": "^4.5.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-cassandra": "^2.3.2",
+    "fast-csv": "^4.3.1",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.4",
+    "newrelic": "^6.11.0",
+    "nodemon": "^2.0.2",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-icons": "^3.9.0",
+    "sequelize": "^6.3.1",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "faker": "^4.1.0",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./spec/setupTests.js"
+    ]
+  }
+}

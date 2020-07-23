@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+.similar-apps {
+  background-color: whitesmoke;
+  padding-top: 20px;
+}
+
+.header {
+  width: 330px;
+  margin-bottom: 15px;
+  min-height: 30px;
+  position: relative;
+}
+
+.similar {
+  font-family: "Roboto",sans-serif;
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+.btn-col {
+  position: relative;
+  min-height: 30px
+}
+
+.seemore-btn {
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #689f38;
+  color: white;
+  position: absolute;
+  right: 0;
+  border-radius: 4px;
+  border: 1px solid white;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 13px;
+  min-width: 40px;
+}
+
+.seemore-btn:hover {
+  background-color: #8bc34a;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.27);
+  transition: 0.25s;
+}
+
+.appCards {
+  width: 330px
+}
+
+.appCard {
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+.appLogo {
+  width: 165;
+}
+
+.appLogo:hover {
+  cursor: pointer;
+}
+
+
+.appLogo img {
+  height: 165px;
+  width: 165px;
+  padding: 18px
+}
+
+.appInfo {
+  position: relative;
+}
+
+.right-side {
+  padding: 7px 10px !important;
+}
+
+.appName {
+  line-height: 24px;
+  max-height: 24px;
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.appName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.company {
+  line-height: 17px;
+  max-height: 17px;
+  overflow: hidden;
+  word-break: break-all;
+  font-family: "Roboto",sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.company:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.description {
+  line-height: 18px;
+  margin-top: 9px;
+  font-size: 13px;
+  /* word-break: break-word; */
+  font-weight: 300;
+  max-height: 54px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  word-break: break-word;
+}
+
+.description:hover {
+  cursor: pointer;
+}
+
+.rating {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px
+}

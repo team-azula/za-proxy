@@ -1,0 +1,9 @@
+[submodule "app-info-logistics-component"]
+	path = app-info-logistics-component
+	url = https://github.com/team-azula/app-info-logistics-component.git
+[submodule "similar-component"]
+	path = similar-component
+	url = https://github.com/team-azula/similar-component.git
+[submodule "app-preview-info-carousel"]
+	path = app-preview-info-carousel
+	url = https://github.com/team-azula/app-preview-info-carousel.git

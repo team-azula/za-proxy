@@ -1,0 +1,456 @@
+
+body {
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#page {
+  display: grid;
+  grid-template:
+  ". . ." 70px
+  ". app1 similar" auto
+  ". pictures similar" auto
+  ". review ." auto
+  ". . ." 150px
+  / 200px 720px auto
+}
+
+#app-info {
+  display: grid;
+  grid-area: app1;
+  justify-self: start;
+  align-self: start;
+}
+
+#app-preview {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 2px;
+  display: grid;
+  grid-area: pictures;
+  justify-self: start;
+  align-self: start;
+}
+
+#app-similar {
+  display: grid;
+  grid-area: similar;
+  justify-self: end;
+  align-self: start;
+}
+
+#review {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 2px;
+  display: grid;
+  grid-area: review;
+  justify-self: start;
+  align-self: start;
+}
+
+.info {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+  background-color: white;
+  display: grid;
+  min-width:720px;
+  max-width:720px;
+  grid-template:
+    "image name . editorsChoice" 60px
+    "image author category rating" 30px
+    "image . . ." 40px
+    "image ads ads ." 50px
+    "image wishlist . install-button" 40px
+    "add-info add-info add-info add-info" 160px
+    / 31% 16% 16% 34%;
+}
+
+.add-info {
+  grid-area: add-info;
+  display: grid;
+  grid-template:
+    ". add-info-title add-info-title . ." 65px
+    ". currentVersion size installs updatedAt" 95px
+    / 8% 23% 16% 16% 34%;
+}
+
+.personLogo {
+  height:10px;
+  width:10px;
+}
+
+.image {
+  height: 180px;
+  width: 180px;
+  grid-area: image;
+  margin: 25px;
+}
+
+.editorsChoice {
+  grid-area: editorsChoice;
+  justify-self: end;
+  align-self: end;
+  color: #8d8d8d;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.name {
+  grid-area: name;
+  justify-self: start;
+  align-self: end;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.author {
+  grid-area: author;
+  justify-self: start;
+  align-self: center;
+  font-weight: 700;
+  color: #33691e;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+}
+
+.size {
+  grid-area: size;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  align-self:center;
+}
+
+.category {
+  grid-area: category;
+  font-weight: 700;
+  color: #33691e;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  align-self:center;
+}
+
+.contains{
+  font-weight:700;
+}
+.ads {
+  grid-area: ads;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #8d8d8d;
+  align-self:end;
+}
+
+.caution{
+  height:16px;
+  width:16px;
+}
+
+.rating-me {
+  grid-area: rating;
+  justify-self: end;
+  color: #8d8d8d;
+  font-size: 13px;
+  font-weight: 300;
+  align-self:center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.updatedAt {
+  grid-area: updatedAt;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  align-self: center;
+  justify-self: center;
+}
+
+.installs {
+  grid-area: installs;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  align-self:center;
+}
+
+.wishlist {
+  grid-area: wishlist;
+  color: #33691e;
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  justify-self: center;
+}
+
+.add-info-title {
+  grid-area: add-info-title;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  align-self:end;
+}
+
+.currentVersion {
+  grid-area: currentVersion;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  align-self:center;
+}
+
+.install-button {
+  background-color: #689f38;
+  color: #fff;
+  border-radius: 4px;
+  grid-area: install-button;
+  height: 36px;
+  width: 76px;
+  justify-self: end;
+  align-self:center;
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+}
+
+.wishlistLogo {
+  height:16px;
+  width:16px;
+  color: #33691e;
+}
+
+.title {
+  font-weight:700;
+}
+
+.contents {
+  background-color: #fff;
+  align-content: center;
+  padding: 25px 0 25px 0;
+  width: 720px;
+  margin : 0 auto;
+}
+
+.carouselContents {
+  background-color: #fff;
+  align-content: center;
+  padding: 25px 0 25px 0;
+  width: 720px;
+  margin : 0 0 0 0;
+}
+
+.container-carousel-service {
+  background-color: #fff;
+  align-content: center;
+  padding: 25px 0 25px 0;
+  width: 720px;
+  margin : 0 auto;
+}
+
+.description-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: rgb(85, 84, 84);
+  background: #fff;
+  display: block;
+  margin-top: 0cm;
+  font-size: 14px;
+  line-height: 24px;
+  height: 100%;
+  padding: 0px 15px 5px 5px;
+  position: relative;
+  text-align: left;
+  margin-left: 15px;
+  text-rendering: optimizeLegibility;
+}
+
+#feature,
+#addText1,
+#addText2,
+#addText3 {
+  line-height: 19.5px;
+  padding: 0px 0px 0px 0px;
+  margin-left: 15px;
+}
+
+/* #addText3 {
+  margin-bottom: 2cm;
+} */
+
+#feature {
+  padding: 17px 0px 17px 0px;
+}
+
+#readmore {
+  color: #33691e;
+  transition: 'background' .2s .1s;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size:14px;
+  font-weight: 450;
+  font-stretch: condensed;
+  text-size-adjust:100%;
+}
+
+.chevron-arrow-left {
+  cursor: pointer;
+  display: inline-block;
+  border-right: 2px solid rgb(134, 130, 130);
+  border-bottom: 2px solid rgb(134, 130, 130);
+  width: 12px; height: 12px;
+  transform: rotate(-225deg);
+}
+
+.chevron-arrow-right {
+  cursor: pointer;
+  display: inline-block;
+  border-right: 2px solid rgb(134, 130, 130);
+  border-bottom: 2px solid rgb(134, 130, 130);
+  width: 12px; height: 12px;
+  transform: rotate(-45deg);
+}
+
+.chevron-arrow-left:hover,
+.chevron-arrow-right:hover {
+  border-right: 2px solid rgb(56, 54, 54);
+  border-bottom: 2px solid rgb(56, 54, 54);
+}
+/*
+* {
+  box-sizing: border-box;
+  color: #333;
+} */
+
+.similar-apps {
+  padding-top: 20px;
+}
+
+.header {
+  width: 330px;
+  margin-bottom: 15px;
+  min-height: 30px;
+  position: relative;
+}
+
+.similar {
+  font-family: "Roboto",sans-serif;
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+.btn-col {
+  position: relative;
+  min-height: 30px
+}
+
+.seemore-btn {
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #689f38;
+  color: white;
+  position: absolute;
+  right: 0;
+  border-radius: 4px;
+  border: 1px solid white;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 13px;
+  min-width: 40px;
+}
+
+.seemore-btn:hover {
+  background-color: #8bc34a;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.27);
+  transition: 0.25s;
+}
+
+.appCards {
+  width: 330px
+}
+
+.appCard {
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+.appLogo {
+  width: 165;
+}
+
+.appLogo:hover {
+  cursor: pointer;
+}
+
+
+.appLogo img {
+  height: 165px;
+  width: 165px;
+  padding: 18px
+}
+
+.appInfo {
+  position: relative;
+}
+
+.right-side {
+  padding: 7px 10px !important;
+}
+
+.appName {
+  line-height: 24px;
+  max-height: 24px;
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.appName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.company {
+  line-height: 17px;
+  max-height: 17px;
+  overflow: hidden;
+  word-break: break-all;
+  font-family: "Roboto",sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.company:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.description {
+  line-height: 18px;
+  margin-top: 9px;
+  font-size: 13px;
+  /* word-break: break-word; */
+  font-weight: 300;
+  max-height: 54px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  word-break: break-word;
+}
+
+.description:hover {
+  cursor: pointer;
+}
+
+.rating {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px
+}

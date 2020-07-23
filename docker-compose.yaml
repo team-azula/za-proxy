@@ -1,0 +1,22 @@
+version: '2'
+services:
+  app-info:
+    build: ./app-info-logistics-component
+    ports:
+      - 3004:3004
+  app-preview:
+    build: ./app-preview-info-carousel
+    ports:
+      - 3003:3003
+  app-review:
+    build: ./review-component
+    ports:
+      - 3002:3002
+  app-similar:
+    build: ./similar-component
+    ports:
+      - 3001:3001
+  app-proxy:
+    build: ./proxy
+    ports:
+      - 3000:3000

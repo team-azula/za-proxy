@@ -1,0 +1,42 @@
+{
+  "name": "za-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:app-info": "cd app-info-logistics-component && npm run start",
+    "start:app-preview": "cd app-preview-info-carousel && npm run start",
+    "start:app-reviews": "cd review-component && npm run start",
+    "start:app-similars": "cd similar-component && npm run start",
+    "start:proxy": "cd proxy && npm run start",
+    "build:app-info": "cd app-info-logistics-component && npm run build-prod",
+    "build:app-preview": "cd app-preview-info-carousel && npm run build-prod",
+    "build:app-reviews": "cd review-component && npm run build-prod",
+    "build:app-similars": "cd similar-component && npm run build-prod",
+    "install:app-info": "cd app-info-logistics-component && npm install",
+    "install:app-preview": "cd app-preview-info-carousel && npm install",
+    "install:app-reviews": "cd review-component && npm install",
+    "install:app-similars": "cd similar-component && npm install",
+    "install:proxy": "cd proxy && npm install",
+    "start:all": "stmux -M -- [ \"npm run start:app-info\" : \"npm run start:app-preview\" : \"npm run start:app-reviews\" : \"npm run start:app-similars\" : \"npm run start:proxy\" ]",
+    "build:all": "stmux -M -- [ \"npm run build:app-info\" : \"npm run build:app-preview\" : \"npm run build:app-reviews\" : \"npm run build:app-similars\" ]",
+    "install:all": "stmux -M -- [ \"npm run install:app-info\" : \"npm run install:app-preview\" : \"npm run install:app-reviews\" : \"npm run install:app-similars\" : \"npm run install:proxy\" ]",
+    "install": "npm run install:all",
+    "build": "npm run build:all",
+    "start": "npm run start:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-azula/za-proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-azula/za-proxy/issues"
+  },
+  "homepage": "https://github.com/team-azula/za-proxy#readme",
+  "dependencies": {
+    "stmux": "^1.8.0"
+  }
+}

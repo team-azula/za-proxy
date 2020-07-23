@@ -1,0 +1,26 @@
+{
+  "name": "review-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "cd server && npm run seed:local",
+    "start": "cd server && npm run start",
+    "start:database": "npm run seed && npm run start",
+    "prestart": "cd client && npm run build-prod",
+    "build-prod": "cd client && npm run build-prod",
+    "postinstall": "(cd client && npm install); (cd server && npm install);"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-azula/review-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-azula/review-component/issues"
+  },
+  "homepage": "https://github.com/team-azula/review-component#readme",
+  "dependencies": {}
+}
